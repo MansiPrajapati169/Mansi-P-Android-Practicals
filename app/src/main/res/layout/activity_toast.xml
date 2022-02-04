@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Toast">
+    <Button
+        android:id="@+id/toastButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rippleeffect"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/customToastButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Custom Toast"
+        android:layout_below="@id/toastButton"
+        android:background="@drawable/rippleeffect"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

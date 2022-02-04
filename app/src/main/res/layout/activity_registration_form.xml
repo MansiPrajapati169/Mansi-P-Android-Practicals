@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".RegistrationForm">
+
+    <TextView
+        android:id="@+id/registrationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION "
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/usernameTextInput"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        android:layout_below="@id/registrationTextView"
+        android:paddingBottom="10sp">
+
+            <EditText
+                android:id="@+id/userNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter username"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameTextInput"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="true"
+        app:counterMaxLength="20">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Enter password"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+     <TextView
+         android:id="@+id/genderTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Gender : "
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="10dp"
+         android:layout_below="@id/passwordTextInput">
+     </TextView>
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/genderTextView"
+        android:layout_below="@id/passwordTextInput">
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Female">
+        </RadioButton>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/languagesCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Languages : "
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/genderTextView">
+    </TextView>
+    <CheckBox
+        android:id="@+id/hindiCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderTextView"
+        android:layout_toRightOf="@id/languagesCheckBox"
+        android:text="Hindi"></CheckBox>
+    <CheckBox
+        android:id="@+id/englishCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:layout_below="@id/genderTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/hindiCheckBox" />
+    <CheckBox
+        android:id="@+id/gujaratiCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gujarati"
+        android:layout_below="@id/genderTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/englishCheckBox" />
+
+    <Switch
+        android:id="@+id/detailsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languagesCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="save"
+        android:textOff="unsave"
+        android:textOn="save" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/detailsSwitch"
+        android:background="@drawable/rippleeffect"
+        tools:ignore="SpeakableTextPresentCheck"></Button>
+    <Button
+        android:id="@+id/toastTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/detailsSwitch"
+        android:background="@drawable/rippleeffect"
+        android:layout_toRightOf="@id/submitButton"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/showDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text=" "
+        tools:ignore="SpeakableTextPresentCheck"></TextView>
+</RelativeLayout>

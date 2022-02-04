@@ -10,14 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Practicals">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".UiWidgets"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Toast"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".RegistrationForm"
+            android:exported="true"
+            android:label="@string/title_activity_registration_form"
+            android:theme="@style/Theme.Practicals.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
