@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".ui_widget.TaskButtons">
+    android:gravity="center"
+    tools:context=".layout_practicals.TaskButtons">
 
-    <Button
-        android:id="@+id/taskButton"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/layoutTaskButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Android (A) - UI Widgets"
+        android:text="Android (B) - UI Widgets"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/rippleeffect"
+        android:background="@drawable/buttonripple"
         android:textColor="@android:color/background_light" />
 
 </RelativeLayout>

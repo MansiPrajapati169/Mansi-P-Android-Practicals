@@ -11,7 +11,7 @@
         android:id="@+id/registrationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REGISTRATION "
+        android:text="@string/registration_title"
         android:layout_marginStart="20dp"
         android:textSize="20sp"
         android:textColor="@color/teal_200"
@@ -38,7 +38,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/edittext_background"
+                android:background="@drawable/edittext_background_ui_widget"
                 tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/edittext_background"
+                android:background="@drawable/edittext_background_ui_widget"
                 android:hint="Enter password"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -68,7 +68,7 @@
         android:id="@+id/genderTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gender : "
+        android:text="@string/gender_text"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="15dp"
@@ -90,14 +90,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Male" />
+            android:text="@string/gender_male" />
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/femaleRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="Female"/>
+            android:text="@string/gender_female"/>
 
     </RadioGroup>
 
@@ -105,7 +105,7 @@
         android:id="@+id/languagesCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Languages : "
+        android:text="@string/language_text"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="15dp"
@@ -118,25 +118,16 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/genderTextView"
         android:layout_toEndOf="@id/languagesCheckBox"
-        android:text="Hindi" />
+        android:text="@string/hindi_checkbox" />
 
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/englishCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="English"
+        android:text="@string/english_checkbox"
         android:layout_below="@id/genderTextView"
         android:layout_marginStart="10dp"
         android:layout_toEndOf="@id/hindiCheckBox" />
-
-    <androidx.appcompat.widget.AppCompatCheckBox
-        android:id="@+id/gujaratiCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gujarati"
-        android:layout_below="@id/genderTextView"
-        android:layout_marginStart="10dp"
-        android:layout_toEndOf="@id/englishCheckBox" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/detailsSwitch"
@@ -148,9 +139,7 @@
         android:layout_marginBottom="10dp"
         android:checked="true"
         android:minHeight="48dp"
-        android:text="save"
-        android:textOff="unsave"
-        android:textOn="save" />
+        android:text="@string/switch_text"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/submitButton"
@@ -162,7 +151,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/rippleeffect"
-        android:text="submit"
+        android:text="@string/submit_button"
         android:textColor="@color/white"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -170,7 +159,7 @@
         android:id="@+id/toastTaskButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toast"
+        android:text="@string/toast_button"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="15dp"
@@ -190,7 +179,6 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:text=" "
         tools:ignore="SpeakableTextPresentCheck" />
 
 </RelativeLayout>

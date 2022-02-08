@@ -11,7 +11,7 @@
         android:id="@+id/toastButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Toast"
+        android:text="@string/toast_button"
         android:layout_marginBottom="20dp"
         android:background="@drawable/rippleeffect"
         android:textColor="@android:color/background_light" />
@@ -20,7 +20,7 @@
         android:id="@+id/customToastButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Custom Toast"
+        android:text="@string/custom_toast_button"
         android:layout_below="@id/toastButton"
         android:background="@drawable/rippleeffect"
         android:textColor="@android:color/background_light"

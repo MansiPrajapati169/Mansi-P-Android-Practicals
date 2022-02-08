@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".layout_practicals.ConstraintLayout">
+
+ <androidx.appcompat.widget.AppCompatTextView
+     android:id="@+id/studentDetailsTextView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="16dp"
+     android:text="@string/layout_title"
+     android:textColor="@color/white"
+     android:textSize="20dp"
+     android:textStyle="bold"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintLeft_toLeftOf="parent"/>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/nameTextInput"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     app:layout_constraintStart_toStartOf="@id/nameTextInput"
+     app:layout_constraintEnd_toEndOf="@id/nameTextInput"
+     app:layout_constraintTop_toBottomOf="@id/studentDetailsTextView"
+     app:layout_constraintBottom_toTopOf="@id/emailTextInput">
+
+     <androidx.appcompat.widget.AppCompatEditText
+       android:id="@+id/nameEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/edittext_background"
+       android:hint="@string/name_hint"/>
+
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/emailTextInput"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintStart_toStartOf="@id/nameTextInput"
+     app:layout_constraintEnd_toEndOf="@id/nameTextInput"
+     app:layout_constraintTop_toBottomOf="@id/nameTextInput"
+     app:layout_constraintBottom_toTopOf="@id/spinnerItems">
+
+     <androidx.appcompat.widget.AppCompatEditText
+       android:id="@+id/emailEditText"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/edittext_background"
+       android:hint="@string/email_hint"/>
+
+ </com.google.android.material.textfield.TextInputLayout>
+
+  <androidx.appcompat.widget.AppCompatSpinner
+      android:id="@+id/spinnerItems"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:background="@drawable/edittext_background"
+      app:layout_constraintStart_toStartOf="@id/nameTextInput"
+      app:layout_constraintEnd_toEndOf="@id/nameTextInput"
+      app:layout_constraintTop_toBottomOf="@id/emailTextInput"
+      app:layout_constraintBottom_toBottomOf="@id/feedbackTextInput"
+      android:spinnerMode="dropdown"/>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/feedbackTextInput"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     app:layout_constraintStart_toStartOf="@id/nameTextInput"
+     app:layout_constraintEnd_toEndOf="@id/nameTextInput"
+     app:layout_constraintTop_toBottomOf="@id/spinnerItems"
+     app:layout_constraintBottom_toTopOf="@id/emailResponseCheckBox"
+     app:endIconMode="clear_text">
+
+      <androidx.appcompat.widget.AppCompatEditText
+          android:id="@+id/feedbackEditText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/edittext_background"
+          android:hint="@string/feedback_hint"
+          android:lines="4"
+          android:textSize="20sp"
+          tools:ignore="SpeakableTextPresentCheck" />
+
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <androidx.appcompat.widget.AppCompatCheckBox
+     android:id="@+id/emailResponseCheckBox"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:text="@string/feedback_checkbox"
+     android:textColor="@color/white"
+     android:textSize="15sp"
+     app:layout_constraintStart_toStartOf="@id/nameTextInput"
+     app:layout_constraintEnd_toEndOf="@id/nameTextInput"
+     app:layout_constraintBottom_toTopOf="@id/sendFeedbackButton"
+     app:layout_constraintTop_toBottomOf="@id/feedbackTextInput"/>
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/sendFeedbackButton"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:background="@drawable/buttonripple"
+     android:text="@string/feedback_button"
+     app:layout_constraintStart_toStartOf="@id/nameTextInput"
+     app:layout_constraintEnd_toEndOf="@id/nameTextInput"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/emailResponseCheckBox"
+     tools:ignore="SpeakableTextPresentCheck"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
