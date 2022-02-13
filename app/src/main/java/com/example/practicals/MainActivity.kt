@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.practicals.layout_practicals.Layouts
+import com.example.practicals.recycler_list_practicals.Activities.ListRecyclerViewPager
 import com.example.practicals.ui_widget.RegistrationForm
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         androidTasks()
     }
 
@@ -22,6 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         uiLayouts.setOnClickListener {
             intent = Intent(applicationContext, Layouts::class.java)
+            startActivity(intent)
+        }
+
+        recyclerViewAdapters.setOnClickListener {
+            intent = Intent(applicationContext, ListRecyclerViewPager::class.java)
             startActivity(intent)
         }
     }
