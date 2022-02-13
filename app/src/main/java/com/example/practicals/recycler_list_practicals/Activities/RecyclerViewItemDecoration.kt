@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_recycler_view.itemRecyclerView
 
 
 class RecyclerViewItemDecoration : AppCompatActivity() {
-    private lateinit var items : Array<Details>
+    private lateinit var items : ArrayList<Details>
     var titleArray = arrayOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,19 +26,7 @@ class RecyclerViewItemDecoration : AppCompatActivity() {
     private fun itemDecoration() {
         titleArray = resources.getStringArray(R.array.title_names)
 
-        items = arrayOf(
-            Details(title = titleArray[0], image = R.drawable.img),
-            Details(title = titleArray[1], image = R.drawable.img),
-            Details(title = titleArray[2], image = R.drawable.img),
-            Details(title = titleArray[3], image = R.drawable.img),
-            Details(title = titleArray[0], image = R.drawable.img),
-            Details(title = titleArray[1], image = R.drawable.img),
-            Details(title = titleArray[2], image = R.drawable.img),
-            Details(title = titleArray[3], image = R.drawable.img),
-            Details(title = titleArray[0], image = R.drawable.img),
-            Details(title = titleArray[1], image = R.drawable.img),
-            Details(title = titleArray[2], image = R.drawable.img),
-            Details(title = titleArray[3], image = R.drawable.img))
+        items = Details.getRecyclerData(titleArray)
 
         val adapter = RecyclerViewItemHolder(items)
         val gridLayout = GridLayoutManager(this,3)
