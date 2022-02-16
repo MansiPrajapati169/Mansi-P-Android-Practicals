@@ -94,4 +94,24 @@
         <item>The Giant Pizza Slice</item>
     </string-array>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--activity_fragment-->
+    <string name="container_task"> FragmentContainer + bottomNavigation</string>
+    <string name="jetpack_task"> JetPack + bottomNavigation</string>
+    <string name="data_edittext"> Enter the data</string>
+    <string name="send_btn_text"> Send</string>
+    <string name="gallery_btn_text"> Capture Photo</string>
+    <string name="default_receive_text"> Send Your Message</string>
+
+    <!--Main Activity-->
+    <string name="androidD_task">Android(D) Activity,Intent and Fragment</string>
+
+    <!-- Menu -->
+    <string name="gallery_menu_item">Gallery</string>
+    <string name="add_message_menu_item">Add Message</string>
+    <string name="view_message_menu_item">View Message</string>
+    <string name="intent_type">image/*</string>
+
 </resources>

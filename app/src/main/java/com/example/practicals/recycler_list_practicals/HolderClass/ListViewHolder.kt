@@ -24,10 +24,10 @@ class ListViewHolder(private var activity: Activity, private var itemList: Array
             viewHolder = view.tag as ViewHolder
         }
 
-        var item = itemList[position]
+        val item = itemList[position]
         viewHolder.title?.text = item.title
         viewHolder.subTitle?.text = item.subTitle
-        item?.image?.let { viewHolder.image?.setImageResource(it) }
+        item.image?.let { viewHolder.image?.setImageResource(it) }
 
         return view as View
 
@@ -54,6 +54,5 @@ class ListViewHolder(private var activity: Activity, private var itemList: Array
             subTitle =  row?.findViewById(R.id.subtitle)
             image =  row?.findViewById(R.id.icon)
         }
-
     }
 }

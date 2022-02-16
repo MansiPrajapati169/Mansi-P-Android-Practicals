@@ -47,5 +47,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uiLayouts" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activityFragment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonripple"
+        android:text="@string/androidD_task"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewAdapters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
