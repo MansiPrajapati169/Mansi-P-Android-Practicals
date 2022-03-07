@@ -11,10 +11,17 @@
         android:theme="@style/Theme.Practicals">
 
         <activity
-            android:name=".ui_widget.TaskButtons"
-            android:exported="true" >
+            android:name=".ui_widget.Toast"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui_widget.RegistrationForm"
+            android:exported="true"
+            android:theme="@style/Theme.Practicals.NoActionBar" />
+
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,17 +30,28 @@
         </activity>
 
         <activity
-            android:name=".ui_widget.Toast"
-            android:exported="true" />
+            android:name=".layout_practicals.FrameLayout"
+            android:exported="false" />
 
         <activity
-            android:name=".ui_widget.RegistrationForm"
-            android:exported="true"
-            android:theme="@style/Theme.Practicals.NoActionBar"/>
+            android:name=".layout_practicals.TableLayout"
+            android:exported="false" />
 
         <activity
-            android:name=".ui_widget.MainActivity"
-            android:exported="true" />
+            android:name=".layout_practicals.ConstraintLayout"
+            android:exported="false" />
+
+        <activity
+            android:name=".layout_practicals.RelativeLayout"
+            android:exported="false" />
+
+        <activity
+            android:name=".layout_practicals.LinearLayout"
+            android:exported="false" />
+
+        <activity
+            android:name=".layout_practicals.Layouts"
+            android:exported="true"/>
 
     </application>
 </manifest>

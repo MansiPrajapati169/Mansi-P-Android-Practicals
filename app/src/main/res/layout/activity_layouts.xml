@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".layout_practicals.Layouts">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_button"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonripple" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/relative_button"
+        android:layout_below="@id/linearLayout"
+        android:background="@drawable/buttonripple"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tableLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/table_button"
+        android:textColor="@color/white"
+        android:layout_below="@id/relativeLayout"
+        android:background="@drawable/buttonripple"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/constraintLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/constraint_button"
+        android:layout_below="@id/tableLayout"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonripple"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/frameLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/frame_button"
+        android:textColor="@color/white"
+        android:layout_below="@id/constraintLayout"
+        android:background="@drawable/buttonripple"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

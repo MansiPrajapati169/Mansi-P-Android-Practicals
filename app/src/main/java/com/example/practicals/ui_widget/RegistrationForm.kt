@@ -9,8 +9,14 @@ import com.example.practicals.R
 import kotlinx.android.synthetic.main.activity_registration_form.*
 
 class RegistrationForm : AppCompatActivity() {
-private var emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
-private var valid : Boolean = false
+
+    private var emailPattern : String? = null
+    private var required : String? = null
+    private var invalidEnail : String? = null
+    private var submitDetails : String? = null
+    private var passwordShort : String? = null
+
+    private var valid : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,18 +35,25 @@ private var valid : Boolean = false
     }
 
     private fun userDataValidate() {
+
+        emailPattern = getString(R.string.email_pattern)
+        required = getString(R.string.required_text)
+        invalidEnail = getString(R.string.invalid_email)
+        submitDetails = getString(R.string.submit_toast)
+        passwordShort = getString(R.string.password_short_text)
+
         userNameEditText.doOnTextChanged { text, start, before, count ->
             when (true) {
-                text!!.isEmpty() -> usernameTextInput.error = "required"
-                userNameEditText.text.toString().matches(emailPattern.toRegex()) == false -> usernameTextInput.error = "Enter valid email"
+                text!!.isEmpty() -> usernameTextInput.error = required
+                userNameEditText.text.toString().matches(emailPattern!!.toRegex()) == false -> usernameTextInput.error = invalidEnail
                 else -> usernameTextInput.error = null
             }
         }
 
         passwordEditText.doOnTextChanged { text, start, before, count ->
             when (true) {
-                text!!.isEmpty() -> passwordTextInput.error = "required"
-                text!!.length < 8 -> passwordTextInput.error = "password is too short"
+                text!!.isEmpty() -> passwordTextInput.error = required
+                text!!.length < 8 -> passwordTextInput.error = passwordShort
                 else -> passwordTextInput.error = null
             }
         }
@@ -50,10 +63,10 @@ private var valid : Boolean = false
         submitButton.setOnClickListener {
             when(valid == false) {
                 userNameEditText.text!!.isEmpty() && passwordEditText.text!!.isEmpty() -> {
-                    usernameTextInput.error = "Required"
-                    passwordTextInput.error = "Required"
+                    usernameTextInput.error = required
+                    passwordTextInput.error = required
                 }
-                passwordEditText.text!!.length < 8 -> passwordTextInput.error = "password is too short"
+                passwordEditText.text!!.length < 8 -> passwordTextInput.error = passwordShort
                 else -> {
                     passwordTextInput.error = null
                     usernameTextInput.error = null
@@ -63,11 +76,11 @@ private var valid : Boolean = false
 
             when (valid == true) {
                 detailsSwitch.isChecked && userNameEditText.text!!.isEmpty() == false -> {
-                    showDetailsTextView.text = "username:" + userNameEditText.text
+                    showDetailsTextView.text = userNameEditText.text
                 }
                 else -> {
                     showDetailsTextView.text = " "
-                    Toast.makeText(this, "Details submitted", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, submitDetails, Toast.LENGTH_LONG).show()
                 }
             }
 

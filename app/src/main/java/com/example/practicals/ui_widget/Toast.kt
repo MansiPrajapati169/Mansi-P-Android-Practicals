@@ -30,7 +30,7 @@ class Toast : AppCompatActivity() {
 
     private fun simpleToast() {
         toastButton.setOnClickListener {
-            Toast.makeText(this, "This is a simple toast message", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,getString(R.string.toast_message), Toast.LENGTH_LONG).show()
         }
     }
 }

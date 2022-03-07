@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">Practicals</string>
+
+    <!--ui_layout-->
+    <string name="layout_title"> Enter feedback details to send to the developer :</string>
+    <string name="name_hint"> Your Name</string>
+    <string name="email_hint"> Your Email</string>
+    <string name="feedback_hint"> Feedback Details...</string>
+    <string name="feedback_checkbox"> Would you like an email response?</string>
+    <string name="feedback_button"> Send Feedback</string>
+    <string name="linear_button"> Linear Layout</string>
+    <string name="constraint_button"> Constraint Layout</string>
+    <string name="frame_button"> Frame Layout</string>
+    <string name="table_button"> Table Layout</string>
+    <string name="relative_button"> Relative Layout</string>
+
+    <!--ui_widget-->
+    <string name="registration_title">REGISTRATION</string>
+    <string name="user_name"> Enter Name</string>
+    <string name="user_password"> Enter password</string>
+    <string name="gender_text"> Gender :</string>
+    <string name="gender_male"> Male</string>
+    <string name="gender_female"> Female</string>
+    <string name="language_text"> Languages :</string>
+    <string name="hindi_checkbox"> Hindi</string>
+    <string name="english_checkbox"> English</string>
+    <string name="gujarati_checkbox"> Gujarati</string>
+    <string name="switch_text"> Save</string>
+    <string name="submit_button"> Submit</string>
+    <string name="toast_button"> Toast</string>
+    <string name="custom_toast_button"> Custom Toast</string>
+    <string name="toast_message"> This is a simple toast message</string>
+    <string name="email_pattern"> [a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+ </string>
+    <string name="required_text"> required</string>
+    <string name="password_short_text"> password is too short</string>
+    <string name="submit_toast"> Details submitted</string>
+    <string name="invalid_email"> Enter valid email</string>
+
+    <!--Main Activity-->
+    <string name="taskA_button">Android(A): UI Widgets</string>
+    <string name="taskB_button">Android(B): UI Layouts</string>
+
 </resources>
