@@ -5,6 +5,7 @@
     <string name="taskA_button">Android(A): UI Widgets</string>
     <string name="taskB_button">Android(B): UI Layouts</string>
     <string name="taskC_button">Android(C): RecyclerView and Adapters</string>
+    <string name="taskE_button">Android(E): Other important views</string>
 
     <!--Android(A) ui_layout-->
     <string name="layout_title"> Enter feedback details to send to the developer :</string>
@@ -94,4 +95,13 @@
         <item>The Giant Pizza Slice</item>
     </string-array>
 
+    <!-- Views -->
+    <string name="search_view_hint">search</string>
+    <string name="horizontal_scroll_title">Horizontal Scroll View</string>
+    <string name="vertical_scroll_title">Vertical Scroll View</string>
+    <string name="scroll_view_task">Scroll View</string>
+    <string name="web_view_task">Web View</string>
+    <string name="nested_scroll_view_task">Nested scroll view</string>
+    <string name="animate_task">Animate</string>
+    <string name="nested_text">NestedScrollView is just like ScrollView, but it supports acting as both a nested scrolling parent and child on both new and old versions of Android. It is enabled by default. NestedScrollView is used when there is a need for a scrolling view inside another scrolling view.</string>
 </resources>

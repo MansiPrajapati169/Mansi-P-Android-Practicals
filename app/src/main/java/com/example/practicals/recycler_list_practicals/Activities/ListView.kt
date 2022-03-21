@@ -39,11 +39,7 @@ class ListView : AppCompatActivity() {
             Toast.makeText(this, getString(R.string.list_view_toast, itemIdAtPos), Toast.LENGTH_LONG).show()
         }
 
-        items = arrayOf(
-            Details(title = titleArray[0], subTitle = subTitleArray[0], image = R.drawable.img),
-            Details(title = titleArray[1], subTitle = subTitleArray[1], image = R.drawable.img),
-            Details(title = titleArray[2], subTitle = subTitleArray[2], image =  R.drawable.img),
-            Details(title = titleArray[3], subTitle = subTitleArray[3], image = R.drawable.img))
+        items = Details.getListData(titleArray,subTitleArray)
 
         adapter = ListViewHolder(this,items)
         listview.adapter = adapter

@@ -2,14 +2,14 @@ package com.example.practicals.recycler_list_practicals.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.widget.SearchView
 import com.example.practicals.R
 import com.example.practicals.recycler_list_practicals.DataClass.Details
 import com.example.practicals.recycler_list_practicals.HolderClass.RecycleViewHolder
 import kotlinx.android.synthetic.main.activity_recycler_view.*
 
 class RecyclerViewActivity : AppCompatActivity() {
-    private lateinit var items : Array<Details>
+    private lateinit var items : ArrayList<Details>
     var titleArray = arrayOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,23 +22,21 @@ class RecyclerViewActivity : AppCompatActivity() {
     private fun customRecyclerView() {
         titleArray = resources.getStringArray(R.array.title_names)
 
-        items = arrayOf(
-            Details(title = titleArray[0], image = R.drawable.img),
-            Details(title = titleArray[1], image = R.drawable.img),
-            Details(title = titleArray[2], image = R.drawable.img),
-            Details(title = titleArray[3], image = R.drawable.img),
-            Details(title = titleArray[0], image = R.drawable.img),
-            Details(title = titleArray[1], image = R.drawable.img),
-            Details(title = titleArray[2], image = R.drawable.img),
-            Details(title = titleArray[3], image = R.drawable.img),
-            Details(title = titleArray[0], image = R.drawable.img),
-            Details(title = titleArray[1], image = R.drawable.img),
-            Details(title = titleArray[2], image = R.drawable.img),
-            Details(title = titleArray[3], image = R.drawable.img))
+        items = Details.getRecyclerData(titleArray)
 
         val adapter = RecycleViewHolder(items)
-        val linearLayout = LinearLayoutManager(this)
-        itemRecyclerView.layoutManager = linearLayout
         itemRecyclerView.adapter = adapter
-    }
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                adapter.getFilter().filter(newText)
+                return true
+            }
+
+        })
+}
 }

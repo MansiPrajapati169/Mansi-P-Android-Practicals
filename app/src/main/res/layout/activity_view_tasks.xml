@@ -5,60 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".views.ViewTasksActivity">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/uiWidget"
+        android:id="@+id/searchViewTask"
         android:layout_width="300dp"
         android:layout_height="0dp"
         android:background="@drawable/buttonripple"
-        android:text="@string/taskA_button"
+        android:text="@string/nested_scroll_view_task"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@id/uiLayouts"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/uiLayouts"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/uiLayouts"
+        android:id="@+id/scrollViewTask"
         android:layout_width="300dp"
         android:layout_height="0dp"
-        android:layout_below="@id/uiWidget"
         android:background="@drawable/buttonripple"
-        android:text="@string/taskB_button"
+        android:text="@string/scroll_view_task"
         android:textColor="@android:color/background_light"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uiWidget" />
+        app:layout_constraintTop_toBottomOf="@+id/searchViewTask" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/recyclerViewAdapters"
+        android:id="@+id/webViewTask"
         android:layout_width="300dp"
         android:layout_height="0dp"
-        android:layout_below="@id/uiWidget"
         android:background="@drawable/buttonripple"
-        android:text="@string/taskC_button"
+        android:text="@string/web_view_task"
         android:textColor="@android:color/background_light"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uiLayouts" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewTask" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/views"
+        android:id="@+id/animateTask"
         android:layout_width="300dp"
         android:layout_height="0dp"
-        android:layout_below="@id/uiWidget"
         android:background="@drawable/buttonripple"
-        android:text="@string/taskE_button"
+        android:text="@string/animate_task"
         android:textColor="@android:color/background_light"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerViewAdapters" />
-
+        app:layout_constraintTop_toBottomOf="@id/webViewTask" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
