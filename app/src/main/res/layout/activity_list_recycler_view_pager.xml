@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recycler_list_practicals.Activities.ListRecyclerViewPager">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/listViewTask"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/list_view_task"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerViewTask"
+        app:layout_constraintBottom_toTopOf="@id/recyclerViewTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recyclerViewTask"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/listViewTask"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/recycler_view_task"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/itemDecorationTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewTask" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/itemDecorationTask"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/recyclerViewTask"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/grid_item_decoration_task"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/viewPagerTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewTask" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewPagerTask"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/itemDecorationTask"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/view_pager_task"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDecorationTask" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottomNavigationTask"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/viewPagerTask"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/view_pager_bottom_navigation_task"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPagerTask" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

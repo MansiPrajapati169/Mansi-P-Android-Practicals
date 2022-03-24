@@ -20,6 +20,15 @@
             android:theme="@style/Theme.Practicals.NoActionBar" />
 
         <activity
+            android:name=".recycler_list_practicals.Activities.BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".recycler_list_practicals.Activities.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recycler_list_practicals.Activities.ListRecyclerViewPager"
+            android:exported="true"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -53,5 +62,18 @@
             android:name=".layout_practicals.Layouts"
             android:exported="true"/>
 
+        <activity
+            android:name=".recycler_list_practicals.Activities.RecyclerViewItemDecoration"
+            android:exported="false" />
+        <activity
+            android:name=".recycler_list_practicals.Activities.RecyclerViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".recycler_list_practicals.Activities.CustomListView"
+            android:exported="false" />
+        <activity
+            android:name=".recycler_list_practicals.Activities.ListView"
+            android:exported="true" />
     </application>
+
 </manifest>

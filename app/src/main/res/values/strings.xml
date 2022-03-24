@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Practicals</string>
 
-    <!--ui_layout-->
+    <!--Main Activity-->
+    <string name="taskA_button">Android(A): UI Widgets</string>
+    <string name="taskB_button">Android(B): UI Layouts</string>
+    <string name="taskC_button">Android(C): RecyclerView and Adapters</string>
+
+    <!--Android(A) ui_layout-->
     <string name="layout_title"> Enter feedback details to send to the developer :</string>
     <string name="name_hint"> Your Name</string>
     <string name="email_hint"> Your Email</string>
@@ -14,7 +19,7 @@
     <string name="table_button"> Table Layout</string>
     <string name="relative_button"> Relative Layout</string>
 
-    <!--ui_widget-->
+    <!--Android(B) ui_widget-->
     <string name="registration_title">REGISTRATION</string>
     <string name="user_name"> Enter Name</string>
     <string name="user_password"> Enter password</string>
@@ -36,8 +41,57 @@
     <string name="submit_toast"> Details submitted</string>
     <string name="invalid_email"> Enter valid email</string>
 
-    <!--Main Activity-->
-    <string name="taskA_button">Android(A): UI Widgets</string>
-    <string name="taskB_button">Android(B): UI Layouts</string>
+    <!--Android(C) Recycler and Adapters-->
+
+    <!-- Task Buttons -->
+    <string name="list_view_task">List View</string>
+    <string name="recycler_view_task">Recycler View</string>
+    <string name="grid_item_decoration_task">GridLayout + ItemDecoration</string>
+    <string name="view_pager_task">View Pager</string>
+    <string name="view_pager_bottom_navigation_task">View Pager + BottomNavigation</string>
+
+    <!--Home Fragment -->
+    <string name="home_fragment">Home</string>
+
+    <!-- My Favorites Fragment -->
+    <string name="my_favorites_fragment">My Favorites</string>
+
+    <!-- My Profile Fragment -->
+    <string name="profile_fragment_title">Expandable ListView</string>
+
+    <!-- Recent Fragment -->
+    <string name="recent_fragment">Recent</string>
+
+    <!-- Search Fragment -->
+    <string name="search_fragment_title">Expandable RecyclerView</string>
+
+    <!-- List View -->
+    <string name="list_view_toast">Item id %1$d</string>
+
+    <!-- Menu -->
+    <string name="home_menu_item">Home</string>
+    <string name="search_menu_item">Search</string>
+    <string name="my_profile_menu_item">My profile</string>
+
+    <!-- ViewPager -->
+    <string-array name="page_names">
+        <item>Recent</item>
+        <item>Favorite</item>
+    </string-array>
+
+    <!-- DetailClass Data-->
+    <string-array name="title_names">
+        <item>Domino\'s</item>
+        <item>Papa John\'s Pizza</item>
+        <item>Little Caesars</item>
+        <item>La Pino\'Z</item>
+    </string-array>
+
+    <string-array name="sub_title_names">
+        <item>Dil, Dosti, Domino\'s</item>
+        <item>Better Ingredients. Better Pizza</item>
+        <item>Pizza! Pizza!</item>
+        <item>The Giant Pizza Slice</item>
+    </string-array>
 
 </resources>
