@@ -6,6 +6,7 @@
     <string name="taskB_button">Android(B): UI Layouts</string>
     <string name="taskC_button">Android(C): RecyclerView and Adapters</string>
     <string name="taskE_button">Android(E): Other important views</string>
+    <string name="chapter_four">Chapter 4: Web Services</string>
 
     <!--Android(A) ui_layout-->
     <string name="layout_title"> Enter feedback details to send to the developer :</string>
@@ -95,7 +96,6 @@
         <item>The Giant Pizza Slice</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--activity_fragment-->
@@ -106,8 +106,25 @@
     <string name="gallery_btn_text"> Capture Photo</string>
     <string name="default_receive_text"> Send Your Message</string>
 
-    <!--Main Activity-->
+    <!--Web Services-->
+    <string name="add_user_tv">Add User</string>
+    <string name="name_et">Enter Name</string>
+    <string name="job_et">Enter Job</string>
+    <string name="add_btn">Add</string>
+    <string name="id_tv">id</string>
+    <string name="first_name_tv">First name</string>
+    <string name="last_name_tv">Last name</string>
+    <string name="email_tv">Email</string>
+    <string name="email_et">Enter Email</string>
+    <string name="login_btn">Login</string>
+    <string name="cancel_alert_btn">CANCEL</string>
+    <string name="proceed_alert_btn">PROCEED</string>
+    <string name="alert_title">User Details</string>
+    <string name="successful_toast">Successful</string>
+    <string name="unsuccessful_toast">Unsuccessful</string>
+    <string name="empty_response">Empty response</string>
     <string name="androidD_task">Android(D) Activity,Intent and Fragment</string>
+    <string name="alert_text">name: %1$s \njob: %2$s \nid: %3$s \ncreatedAt: %4$s</string>
 
     <!-- Menu -->
     <string name="gallery_menu_item">Gallery</string>
