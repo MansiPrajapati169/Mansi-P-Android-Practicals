@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/uiWidget"
@@ -96,5 +97,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/views"
         app:layout_constraintWidth_percent="0.8" />
+    app:layout_constraintTop_toBottomOf="@+id/uiLayouts" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnArchitecture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/uiWidget"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/btn_chapter_five"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/webService"
+        app:layout_constraintWidth_percent="0.8" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@
     <string name="taskA_button">Android(A): UI Widgets</string>
     <string name="taskB_button">Android(B): UI Layouts</string>
     <string name="taskC_button">Android(C): RecyclerView and Adapters</string>
+    <string name="btn_chapter_five">Chapter 5 : Android architecture</string>
     <string name="taskE_button">Android(E): Other important views</string>
     <string name="chapter_four">Chapter 4: Web Services</string>
 
@@ -141,4 +142,18 @@
     <string name="nested_scroll_view_task">Nested scroll view</string>
     <string name="animate_task">Animate</string>
     <string name="nested_text">NestedScrollView is just like ScrollView, but it supports acting as both a nested scrolling parent and child on both new and old versions of Android. It is enabled by default. NestedScrollView is used when there is a need for a scrolling view inside another scrolling view.</string>
+    <string name="email">Enter email</string>
+    <string name="title_login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="user_details">Student Details</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="student_name">Enter Name</string>
+    <string name="student_rollNo">Enter RollNo</string>
+    <string name="btn_mvvm">Mvvm</string>
+    <string name="btn_mvc">mvc</string>
+    <string name="btn_mvp">mvp</string>
+
+    <!-- Architecture -->
+    <string name="txt_student_alert">name: %1$s \nroll No: %2$s</string>
+    <string name="txt_custom_message">Custom String: %1$s</string>
 </resources>
