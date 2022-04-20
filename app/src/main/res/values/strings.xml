@@ -75,6 +75,15 @@
     <string name="home_menu_item">Home</string>
     <string name="search_menu_item">Search</string>
     <string name="my_profile_menu_item">My profile</string>
+    <string name="permission">Permission</string>
+    <string name="btn_select_pdf">Select PDF</string>
+    <string name="txt_gallery">Gallery</string>
+    <string name="txt_camera">Camera</string>
+    <string name="txt_data">data</string>
+    <string name="txt_setting">setting</string>
+    <string name="txt_package">package</string>
+    <string name="txt_alert_message">Allow permission for further operations</string>
+    <string name="txt_denied">denied</string>
 
     <!-- ViewPager -->
     <string-array name="page_names">
@@ -156,4 +165,5 @@
     <!-- Architecture -->
     <string name="txt_student_alert">name: %1$s \nroll No: %2$s</string>
     <string name="txt_custom_message">Custom String: %1$s</string>
+    <string name="chapter_six">Chapter 6: Android Permission Model</string>
 </resources>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.practicals.architecture.ArchitectureTasksActivity
 import com.example.practicals.activity_intent_fragment_practicals.Activities.AndroidDTasks
+import com.example.practicals.android_permission_model.PermissionActivity
 import com.example.practicals.layout_practicals.Layouts
 import com.example.practicals.recycler_list_practicals.Activities.ListRecyclerViewPager
 import com.example.practicals.ui_widget.RegistrationForm
@@ -61,6 +62,10 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(applicationContext, ArchitectureTasksActivity::class.java)
             startActivity(intent)
         }
-    }
 
+        btnPermissionModel.setOnClickListener {
+            intent = Intent(applicationContext, PermissionActivity::class.java)
+            startActivity(intent)
+        }
+    }
 }

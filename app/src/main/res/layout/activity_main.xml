@@ -114,5 +114,18 @@
         app:layout_constraintTop_toBottomOf="@id/webService"
         app:layout_constraintWidth_percent="0.8" />
 
-
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPermissionModel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/btnPermissionModel"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/chapter_six"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnArchitecture"
+        app:layout_constraintWidth_percent="0.8" />
 </androidx.constraintlayout.widget.ConstraintLayout>
