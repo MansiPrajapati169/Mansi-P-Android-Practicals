@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.practicals.R
 import com.example.practicals.recycler_list_practicals.DataClass.Details
 
-class RecyclerViewItemHolder(private var itemList: Array<Details>) : RecyclerView.Adapter<RecyclerViewItemHolder.ViewHolder>(){
+class RecyclerViewItemHolder(private var itemList: ArrayList<Details>) : RecyclerView.Adapter<RecyclerViewItemHolder.ViewHolder>(){
     private lateinit var context : Context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
