@@ -20,7 +20,7 @@ class RecyclerViewItemHolder(private var itemList: Array<Details>) : RecyclerVie
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var item = itemList[position]
+        val item = itemList[position]
         holder.title?.text  = item.title
         item.image?.let { holder.image?.setImageResource(it) }
     }

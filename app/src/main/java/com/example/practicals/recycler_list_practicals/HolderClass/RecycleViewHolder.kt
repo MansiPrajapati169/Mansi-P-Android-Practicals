@@ -23,7 +23,7 @@ class RecycleViewHolder(private var itemList: Array<Details>) : RecyclerView.Ada
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var item = itemList[position]
+        val item = itemList[position]
         holder.title?.text  = item.title
         item.image?.let { holder.image?.setImageResource(it) }
         holder.check?.isChecked = item.selected
@@ -45,7 +45,7 @@ class RecycleViewHolder(private var itemList: Array<Details>) : RecyclerView.Ada
 
             check?.setOnCheckedChangeListener { _, isChecked ->
                 if(isChecked) {
-                    Toast.makeText(context,"${title?.text.toString()} Checked",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context,title?.text.toString(),Toast.LENGTH_SHORT).show()
                 }
                 itemList[adapterPosition].selected = isChecked
             }

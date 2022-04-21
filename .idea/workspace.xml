@@ -13,6 +13,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88b95c22-cbe6-4c49-ab2f-a003e695eb1d" name="Default Changelist" comment="advance kotlin concept commit">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/AbstractClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/AbstractClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/ClassObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/ClassObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/EnumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/EnumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/ExceptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/ExceptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/Inheritence.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/Inheritence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/Interface1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/InterfaceExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/java_practicals/Operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/Constructor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/Constructor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/EnumTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/EnumTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/HigherOrder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/HigherOrder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/Inheritence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/InheritenceDemo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/LazyLateinit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/LazyLateinit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/ScopeFunction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/kotlin_practicals/ScopeFunction.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/layout_practicals/ConstraintLayout.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/layout_practicals/FrameLayout.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/practicals/layout_practicals/Helper.kt" afterDir="false" />
@@ -41,6 +55,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/mansi.prajapati/.android/avd/3.4_WQVGA_API_28.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/mansi.prajapati/.android/avd/4_WVGA_Nexus_S_API_28.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

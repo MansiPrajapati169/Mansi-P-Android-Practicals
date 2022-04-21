@@ -1,4 +1,4 @@
-package com.example.practicals.recycler_list_practicals.Utils
+package com.example.practicals.recycler_list_practicals.DataClass
 
 internal object ExpandableListData {
 

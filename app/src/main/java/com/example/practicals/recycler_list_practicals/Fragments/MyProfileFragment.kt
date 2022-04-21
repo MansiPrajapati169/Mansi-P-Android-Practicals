@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.practicals.R
 import com.example.practicals.recycler_list_practicals.Adapters.ExpandableListAdapter
-import com.example.practicals.recycler_list_practicals.Utils.ExpandableListData.data
+import com.example.practicals.recycler_list_practicals.DataClass.ExpandableListData.data
 import kotlinx.android.synthetic.main.fragment_my_profile.*
 
 class MyProfileFragment : Fragment() {

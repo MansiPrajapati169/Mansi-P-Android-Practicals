@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.practicals.activity_intent_fragment_practicals.Fragments.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery">
+
+        <action
+            android:id="@+id/action_gallery"
+            app:destination="@id/addMessageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addMessageFragment"
+        android:name="com.example.practicals.activity_intent_fragment_practicals.Fragments.AddNavFragment"
+        android:label="fragment_add_message"
+        tools:layout="@layout/fragment_add_nav">
+
+        <action
+            android:id="@+id/action_first_to_second"
+            app:destination="@id/viewMessageFragment"
+            app:popUpTo="@+id/addMessageFragment" />
+
+        <argument
+            android:name="messageSend"
+            android:defaultValue=" "
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewMessageFragment"
+        android:name="com.example.practicals.activity_intent_fragment_practicals.Fragments.ViewNavFragment"
+        android:label="fragment_view_message"
+        tools:layout="@layout/fragment_view_nav">
+
+        <action
+            android:id="@+id/action_second_to_first"
+            app:destination="@id/addMessageFragment"
+            app:popUpTo="@+id/galleryFragment" />
+
+        <argument
+            android:name="message"
+            android:defaultValue=" "
+            app:argType="string" />
+    </fragment>
+
+</navigation>

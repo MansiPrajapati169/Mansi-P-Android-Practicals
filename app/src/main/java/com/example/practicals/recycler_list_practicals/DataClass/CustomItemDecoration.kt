@@ -1,4 +1,4 @@
-package com.example.practicals.recycler_list_practicals.Utils
+package com.example.practicals.recycler_list_practicals.DataClass
 
 import android.graphics.Rect
 import android.view.View

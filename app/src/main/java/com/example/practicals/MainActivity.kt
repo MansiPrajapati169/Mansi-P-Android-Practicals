@@ -3,6 +3,7 @@ package com.example.practicals
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.practicals.activity_intent_fragment_practicals.Activities.AndroidDTasks
 import com.example.practicals.layout_practicals.Layouts
 import com.example.practicals.recycler_list_practicals.Activities.ListRecyclerViewPager
 import com.example.practicals.ui_widget.RegistrationForm
@@ -31,5 +32,11 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(applicationContext, ListRecyclerViewPager::class.java)
             startActivity(intent)
         }
+
+        activityFragment.setOnClickListener {
+            intent = Intent(applicationContext, AndroidDTasks::class.java)
+            startActivity(intent)
+        }
     }
+
 }

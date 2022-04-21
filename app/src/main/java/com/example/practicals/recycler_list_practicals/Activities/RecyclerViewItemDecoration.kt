@@ -7,7 +7,7 @@ import android.widget.LinearLayout
 
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.example.practicals.R
-import com.example.practicals.recycler_list_practicals.Utils.CustomItemDecoration
+import com.example.practicals.recycler_list_practicals.DataClass.CustomItemDecoration
 import com.example.practicals.recycler_list_practicals.DataClass.Details
 import com.example.practicals.recycler_list_practicals.HolderClass.RecyclerViewItemHolder
 import kotlinx.android.synthetic.main.activity_recycler_view.itemRecyclerView
