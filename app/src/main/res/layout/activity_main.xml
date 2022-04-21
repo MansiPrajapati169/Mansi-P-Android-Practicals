@@ -3,73 +3,98 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/uiWidget"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskA_button"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@id/uiLayouts"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/uiLayouts"
-        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/uiLayouts"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/uiLayouts"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_below="@id/uiWidget"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskB_button"
         android:textColor="@android:color/background_light"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uiWidget" />
+        app:layout_constraintTop_toBottomOf="@+id/uiWidget"
+        app:layout_constraintWidth_percent="0.8" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/recyclerViewAdapters"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_below="@id/uiWidget"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskC_button"
         android:textColor="@android:color/background_light"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uiLayouts" />
+        app:layout_constraintTop_toBottomOf="@+id/uiLayouts"
+        app:layout_constraintWidth_percent="0.8" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/activityFragment"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/androidD_task"
-        android:layout_marginTop="10dp"
         android:textColor="@android:color/background_light"
-        app:layout_constraintTop_toBottomOf="@id/recyclerViewAdapters"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewAdapters"
+        app:layout_constraintWidth_percent="0.8" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/views"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_below="@id/uiWidget"
+        android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskE_button"
         android:textColor="@android:color/background_light"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activityFragment" />
+        app:layout_constraintTop_toBottomOf="@id/activityFragment"
+        app:layout_constraintWidth_percent="0.8" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/webService"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonripple"
+        android:text="@string/chapter_four"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/views"
+        app:layout_constraintWidth_percent="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

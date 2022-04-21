@@ -7,6 +7,7 @@ import com.example.practicals.activity_intent_fragment_practicals.Activities.And
 import com.example.practicals.layout_practicals.Layouts
 import com.example.practicals.recycler_list_practicals.Activities.ListRecyclerViewPager
 import com.example.practicals.ui_widget.RegistrationForm
+import com.example.practicals.web_services.LoginActivity
 import com.example.practicals.views.ScrollView
 import com.example.practicals.views.ViewTasksActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -47,6 +48,11 @@ class MainActivity : AppCompatActivity() {
 
         activityFragment.setOnClickListener {
             intent = Intent(applicationContext, AndroidDTasks::class.java)
+            startActivity(intent)
+        }
+
+        webService.setOnClickListener {
+            intent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
         }
     }
