@@ -1,6 +1,11 @@
 package com.example.practicals.utils
 
 object Constants {
+    const val IMAGE_INTENT_TYPE = "image/*"
+    const val PDF_INTENT_TYPE = "application/pdf"
+    const val ZERO = 0
+    const val ONE = 1
+    const val TWO = 2
     const val BASE_URL = "https://reqres.in/"
     const val END_URL = "api/users?delay=3"
     const val END_USER_URL = "api/users"
@@ -12,3 +17,4 @@ object Constants {
     const val CONTENT_TYPE = "Content-type"
     const val APPLICATION_JSON = "application/json"
 }
+
