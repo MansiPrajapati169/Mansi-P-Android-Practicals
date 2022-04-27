@@ -53,6 +53,5 @@ class DisplayUserActivity : AppCompatActivity() {
                 Picasso.get().load(obj.getString("avatar")).into(rvImage)
             }
         }
-
     }
 }

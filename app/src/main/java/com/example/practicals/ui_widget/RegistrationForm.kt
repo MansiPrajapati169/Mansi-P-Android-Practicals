@@ -12,7 +12,7 @@ class RegistrationForm : AppCompatActivity() {
 
     private var emailPattern : String? = null
     private var required : String? = null
-    private var invalidEnail : String? = null
+    private var invalidEmail : String? = null
     private var submitDetails : String? = null
     private var passwordShort : String? = null
 
@@ -38,22 +38,22 @@ class RegistrationForm : AppCompatActivity() {
 
         emailPattern = getString(R.string.email_pattern)
         required = getString(R.string.required_text)
-        invalidEnail = getString(R.string.invalid_email)
+        invalidEmail = getString(R.string.invalid_email)
         submitDetails = getString(R.string.submit_toast)
         passwordShort = getString(R.string.password_short_text)
 
-        userNameEditText.doOnTextChanged { text, start, before, count ->
+        userNameEditText.doOnTextChanged { text, _, _, _ ->
             when (true) {
                 text!!.isEmpty() -> usernameTextInput.error = required
-                userNameEditText.text.toString().matches(emailPattern!!.toRegex()) == false -> usernameTextInput.error = invalidEnail
+                !userNameEditText.text.toString().matches(emailPattern!!.toRegex()) -> usernameTextInput.error = invalidEmail
                 else -> usernameTextInput.error = null
             }
         }
 
-        passwordEditText.doOnTextChanged { text, start, before, count ->
+        passwordEditText.doOnTextChanged { text, _, _, _ ->
             when (true) {
                 text!!.isEmpty() -> passwordTextInput.error = required
-                text!!.length < 8 -> passwordTextInput.error = passwordShort
+                text.length < 8 -> passwordTextInput.error = passwordShort
                 else -> passwordTextInput.error = null
             }
         }
@@ -61,7 +61,7 @@ class RegistrationForm : AppCompatActivity() {
 
     private fun submitDetails() {
         submitButton.setOnClickListener {
-            when(valid == false) {
+            when(!valid) {
                 userNameEditText.text!!.isEmpty() && passwordEditText.text!!.isEmpty() -> {
                     usernameTextInput.error = required
                     passwordTextInput.error = required

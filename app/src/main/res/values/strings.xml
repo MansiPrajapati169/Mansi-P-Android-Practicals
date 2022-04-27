@@ -166,4 +166,7 @@
     <string name="txt_student_alert">name: %1$s \nroll No: %2$s</string>
     <string name="txt_custom_message">Custom String: %1$s</string>
     <string name="chapter_six">Chapter 6: Android Permission Model</string>
+    <string name="enter_password">Enter password</string>
+    <string name="username">Enter username</string>
+    <string name="password">Enter Password</string>
 </resources>

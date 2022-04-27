@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     tools:context=".ui_widget.RegistrationForm">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/registrationTextView"
@@ -17,7 +20,7 @@
         android:textColor="@color/teal_200"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp" />
 
@@ -29,17 +32,17 @@
         android:layout_below="@id/registrationTextView"
         android:paddingBottom="10sp">
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/userNameEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter username"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/edittext_background_ui_widget"
-                tools:ignore="SpeakableTextPresentCheck" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background_ui_widget"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,15 +55,15 @@
         app:counterEnabled="true"
         app:counterMaxLength="20">
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/passwordEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/edittext_background_ui_widget"
-                android:hint="Enter password"
-                tools:ignore="SpeakableTextPresentCheck" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_background_ui_widget"
+            android:hint="@string/password"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -180,5 +183,5 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         tools:ignore="SpeakableTextPresentCheck" />
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

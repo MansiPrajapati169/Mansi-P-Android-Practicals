@@ -26,10 +26,10 @@ class CreateUserActivity : AppCompatActivity() {
         dialogBuilder.setMessage(message)
             .setCancelable(false)
             .setPositiveButton(R.string.proceed_alert_btn, DialogInterface.OnClickListener {
-                    dialog, id -> finish()
+                    _, _ -> finish()
             })
             .setNegativeButton(R.string.cancel_alert_btn, DialogInterface.OnClickListener {
-                    dialog, id -> dialog.cancel()
+                    dialog, _ -> dialog.cancel()
             })
 
         val alert = dialogBuilder.create()
@@ -46,10 +46,10 @@ class CreateUserActivity : AppCompatActivity() {
             retrofitData.enqueue(object : Callback<AddUserData> {
 
                 override fun onResponse(call: Call<AddUserData>, response: Response<AddUserData>) {
-                    val response = response.body()
+                    val responseData = response.body()
 
-                    if (response != null) {
-                        val message = getString(R.string.alert_text,response.name,response.job,response.id,response.createdAt)
+                    if (responseData != null) {
+                        val message = getString(R.string.alert_text,responseData.name,responseData.job,responseData.id,responseData.createdAt)
                         showDialog(message)
                     }
                 }

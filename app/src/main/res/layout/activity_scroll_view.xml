@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".views.ScrollView">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/verticalScrollViewText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/vertical_scroll_title"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,18 +47,18 @@
 
     </ScrollView>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/horizontalScrollViewText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/horizontal_scroll_title"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/scrollView"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/scrollView"/>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@id/horizontalScrollViewText">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 

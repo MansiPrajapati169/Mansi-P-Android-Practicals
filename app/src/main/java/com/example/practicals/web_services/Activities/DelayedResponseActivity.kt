@@ -26,10 +26,10 @@ class DelayedResponseActivity : AppCompatActivity() {
 
         retrofitData.enqueue(object : retrofit2.Callback<DataClass> {
             override fun onResponse(call: Call<DataClass>, response: Response<DataClass>) {
-                val response = response.body()
-                if (response != null) {
+                val responseData = response.body()
+                if (responseData != null) {
                     progressBar.visibility = View.INVISIBLE
-                    adapter = DelayedResponseAdapter(response.data)
+                    adapter = DelayedResponseAdapter(responseData.data)
                     rvItem.adapter = adapter
                 }
             }

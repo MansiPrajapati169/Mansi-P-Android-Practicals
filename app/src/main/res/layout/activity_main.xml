@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    tools:context=".MainActivity"
-    tools:ignore="ExtraText">
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/uiWidget"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskA_button"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="@id/uiLayouts"
         app:layout_constraintBottom_toTopOf="@id/uiLayouts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.10"
-        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.8" />
@@ -29,7 +29,6 @@
         android:id="@+id/uiLayouts"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_below="@id/uiWidget"
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskB_button"
@@ -44,7 +43,6 @@
         android:id="@+id/recyclerViewAdapters"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_below="@id/uiWidget"
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskC_button"
@@ -73,7 +71,6 @@
         android:id="@+id/views"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_below="@id/uiWidget"
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/taskE_button"
@@ -97,13 +94,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/views"
         app:layout_constraintWidth_percent="0.8" />
-    app:layout_constraintTop_toBottomOf="@+id/uiLayouts" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnArchitecture"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_below="@id/uiWidget"
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/btn_chapter_five"
@@ -118,8 +113,8 @@
         android:id="@+id/btnPermissionModel"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_below="@id/btnPermissionModel"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/buttonripple"
         android:text="@string/chapter_six"
         android:textColor="@android:color/background_light"
@@ -127,5 +122,7 @@
         app:layout_constraintHeight_percent="0.10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnArchitecture"
-        app:layout_constraintWidth_percent="0.8" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
